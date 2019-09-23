@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Layout from "../comps/MyLayout";
 import fetch from "isomorphic-unfetch";
-
+import css from '../style.css'
 const Index = props => (
   <Layout>
-    <h1>Batman tv show</h1>
+    <h1 style={css.example}>Batman tv show</h1>
 
     <ul>
       {props.shows.map(show => (
